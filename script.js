@@ -12,11 +12,10 @@ var charSet= {
 };
 // Write password to the #password input
 function writePassword() {
-  var password = thePw();
+  var password = questions();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button
@@ -54,16 +53,19 @@ var questions= function(){
   var thePw = [(upperConfirm + lowerConfirm + numbersConfirm + specialConfirm)]; {
     console.log(thePw);
   } 
-  // My attempt and trying to get the results into something i can work with or randomize
-  arryPw = (thePw); {
-  for (var i = 0; i < thePw.length; i++); 
-  }
-  var truePw = arryPw[i];{
-    console.log(truePw);
-  }
 };
-// NEED to figuer out how long Password should be via question,
-// And  where to insert it in my "for loop" which im having trouble with
 
-// Starts the Program
-questions();
+// My attempt and trying to get the results into something i can work with or randomize
+
+//   arryPw = (thePw); {
+//   for (var i = 0; i < thePw.length; i++); 
+//   }
+//   var truePw = arryPw[i];{
+//     console.log(truePw);
+//   }
+// };
+
+
+// NEED to figuer out how long Password should be via question,
+// And  where to insert "x= how long" in my "for loop" which im having trouble with
+
