@@ -32,12 +32,12 @@ Please see issues page.
 ​
 * Git Clone if you wish to collaborate 
 ```
-git clone https://github.com/AdamR-Work/pw-generator.git
+git clone https://github.com/AdamR-Work/password-generator.git
 ```
 ​
 ### Site location
 ​
-* https://adamr-work.github.io/pw-generator/
+* https://adamr-work.github.io/password-generator/
 
 
 ​
@@ -55,7 +55,7 @@ If you have any questions or concerns contact me at adamrfiles@gmail.com
 *
 * 0.1
     * Initial Version
-    * See [Commits history](https://github.com/AdamR-Work/pw-generator/commits/master)
+    * See [Commits history](https://github.com/AdamR-Work/password-generator/commits/master)
 ​
 ## License
 ​
