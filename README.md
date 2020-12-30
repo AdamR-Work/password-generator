@@ -12,7 +12,6 @@ Website for **Adams Password Generator** is used to create random password.
 ### Description
 When you click the "Generate" button it starts a series of prompts. It asks the user to pick if they wish to use uppercase, lowercase, numbers, and special characters in thier password. After it knows that it asks how long they would like it to be. The range of that is set 8-128 in character length. It then displays your passwork on the page. If you dont like that password click generate again and try a new one.
 
-Please see issues page.
 ​
 ### Dependencies
 ​
