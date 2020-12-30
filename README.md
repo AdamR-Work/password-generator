@@ -6,13 +6,11 @@
 ![Image](demo.png)
 ## Description
 ​
-Website for **Adams Password Generator** is used to create random passwords after the user has defined things like upper, lower, numbers, and special characters. It should also define how many characters long it should be.
+Website for **Adams Password Generator** is used to create random password. 
 ​
-## What it has
-So far it Loads the index.html site, Then it Prompt asks the questions of upper, lower, numbers, and special characters.
 
-### Needs Work
-HELP! Its not yet finished. While I got the 4 categories to be asked then funneled down into a singular group. Im having trouble pulling from said grouping by the  user defined length. Which then I can then attach output to the index.html page for user to copy paste.
+### Description
+When you click the "Generate" button it starts a series of prompts. It asks the user to pick if they wish to use uppercase, lowercase, numbers, and special characters in thier password. After it knows that it asks how long they would like it to be. The range of that is set 8-128 in character length. It then displays your passwork on the page. If you dont like that password click generate again and try a new one.
 
 Please see issues page.
 ​
@@ -52,7 +50,8 @@ If you have any questions or concerns contact me at adamrfiles@gmail.com
 
 ## Version History
 ​
-*
+* 0.2
+    * Fixed issues in commands. It is now MVP and a working product.
 * 0.1
     * Initial Version
     * See [Commits history](https://github.com/AdamR-Work/password-generator/commits/master)

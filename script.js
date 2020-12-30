@@ -10,62 +10,51 @@ var charSet= {
   numbers: "0123456789",
   special: "!@#&()–[{}]:;',?/*~$^+=<>"
 };
+
 // Write password to the #password input
 function writePassword() {
   var password = questions();
   var passwordText = document.querySelector("#password");
-
+ 
   passwordText.value = password;
 }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-// Question function, asks which type of characters are needed for PW
+// Question function, asks which type of characters are needed for PassWord
 var questions= function(){
-  window.alert("Welcome to the Password Generator!");
-  
-    var upperConfirm = window.confirm("Do you wish to use Uppercase?");
+  alert("Welcome to the Password Generator!");
+    var charBank = "";
+    var upperConfirm = confirm("Do you wish to use Uppercase?");
       if (upperConfirm){
-        upperConfirm = charSet.upper
-      }else {
-        upperConfirm = "";
+        charBank += charSet.upper
       };
-    var lowerConfirm = window.confirm("Do you wish to use Lowercase?");
+    var lowerConfirm = confirm("Do you wish to use Lowercase?");
       if (lowerConfirm){
-        lowerConfirm = charSet.lower
-      }else {
-        lowerConfirm = "";
+        charBank += charSet.lower
       };
-    var numbersConfirm = window.confirm("Do you wish to use Numbers?");
+    var numbersConfirm = confirm("Do you wish to use Numbers?");
       if (numbersConfirm){
-        numbersConfirm = charSet.numbers
-      }else {
-        numbersConfirm = "";
+        charBank += charSet.numbers
       };
-    var specialConfirm = window.confirm("Do you wish to use Special Chars");
+    var specialConfirm = confirm("Do you wish to use Special Chars");
       if (specialConfirm){
-        specialConfirm = charSet.special
-      }else {
-        specialConfirm = "";
+        charBank += charSet.special;
       };
-// Combines the charcters that are requested, Which works!
-  var thePw = [(upperConfirm + lowerConfirm + numbersConfirm + specialConfirm)]; {
-    console.log(thePw);
-  } 
+    
+    var lengthPrompt = prompt("How many characters long would you like your password to be? (Between 8-128)");
+      while(lengthPrompt <= 7 || lengthPrompt >=129){
+        alert("Incorrect number value.");
+        lengthPrompt = prompt("Can only be a number between 8-128.")
+        }
+
+    truePw = "";
+    arryPw = "";
+// My Randomizer for the password choices
+    for(i=0; i<lengthPrompt; i++){
+      arryPw = charBank[Math.floor(Math.random()*charBank.length)]
+      truePw += arryPw;
+    }
+    return truePw;
 };
-
-// My attempt and trying to get the results into something i can work with or randomize
-
-//   arryPw = (thePw); {
-//   for (var i = 0; i < thePw.length; i++); 
-//   }
-//   var truePw = arryPw[i];{
-//     console.log(truePw);
-//   }
-// };
-
-
-// NEED to figuer out how long Password should be via question,
-// And  where to insert "x= how long" in my "for loop" which im having trouble with
-
